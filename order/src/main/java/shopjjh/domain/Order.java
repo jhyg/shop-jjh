@@ -55,7 +55,7 @@ public class Order {
 
     @PreRemove
     public void onPreRemove() {
-        // implement pre-delete logic here
+        // implement
     }
 
     public static List<Order> findAllByCustomerId(String customerId) {
