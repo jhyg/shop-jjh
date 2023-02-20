@@ -54,7 +54,13 @@ public class Order {
     }
 
     @PreRemove
-    public void onPreRemove() {}
+    public void onPreRemove() {
+        // implement pre-delete logic here
+    }
+
+    public static List<Order> findAllByCustomerId(String customerId) {
+        return repository().findAllByCustomerId(customerId);
+    }
 
     public static OrderRepository repository() {
         OrderRepository orderRepository = OrderApplication.applicationContext.getBean(
