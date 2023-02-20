@@ -55,11 +55,7 @@ public class Order {
 
     @PreRemove
     public void onPreRemove() {
-        // implement
-    }
-
-    public static List<Order> findAllByCustomerId(String customerId) {
-        return repository().findAllByCustomerId(customerId);
+        // implement pre-delete logic 123.      1. 2 3 1.  12.  3.  4.   123
     }
 
     public static OrderRepository repository() {
